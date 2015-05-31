@@ -1,0 +1,23 @@
+#import (Config.path +'/Modules/Institute/Bundle/Data/Entity/InstituteDataMainEntity') = InstituteDataMainEntity;
+
+class CompanyDataMainEntity extends InstituteDataMainEntity {
+
+	_type = 'Entreprise';
+
+	intitialize : function () {
+		_super();
+		this._siret = undefined;
+	}
+
+	hydrate : function (datas) {
+		_super(datas);
+
+		if (datas.siret)
+			this._siret = datas.siret;
+
+		return this;
+	}
+
+}
+
+#export CompanyDataMainEntity;
