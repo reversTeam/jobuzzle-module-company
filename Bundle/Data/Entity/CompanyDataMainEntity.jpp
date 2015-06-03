@@ -3,6 +3,9 @@
 class CompanyDataMainEntity extends InstituteDataMainEntity {
 
 	_type = 'Entreprise';
+	_templateTimeline = 'company_data_timeline_template';
+
+	#default get, set for _siret;
 
 	intitialize : function () {
 		_super();
@@ -13,7 +16,7 @@ class CompanyDataMainEntity extends InstituteDataMainEntity {
 		_super(datas);
 
 		if (datas.siret)
-			this._siret = datas.siret;
+			this.setSiret(datas.siret);
 
 		return this;
 	}
