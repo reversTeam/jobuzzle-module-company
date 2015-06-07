@@ -1,0 +1,10 @@
+class CompanyDataTemplateUpdateView extends InstituteDataTemplateUpdateView {
+
+	_class = 'company';
+	_elementType = 'Company';
+
+	display : function () {
+		return <div>Update Company</div>;
+	}
+
+}
