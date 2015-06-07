@@ -1,0 +1,7 @@
+class CompanyDataUpdateTemplate extends InstituteDataUpdateTemplate {
+
+	_viewClassName = 'CompanyDataTemplateUpdateView';
+	_type = 'Company';
+	_route = 'company';
+
+}

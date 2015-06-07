@@ -1,0 +1,10 @@
+class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
+
+	_class = 'company';
+	_elementType = 'Company';
+
+	display : function () {
+		return <div>View Company</div>;
+	}
+
+}
