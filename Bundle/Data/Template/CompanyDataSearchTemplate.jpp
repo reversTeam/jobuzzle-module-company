@@ -1,7 +1,7 @@
 class CompanyDataSearchTemplate extends InstituteDataSearchTemplate {
 
 	_viewClassName = 'CompanyDataTemplateSearchView';
-	_type = 'Company';
+	_type = 'Entreprise';
 	_route = 'company';
 
 }
