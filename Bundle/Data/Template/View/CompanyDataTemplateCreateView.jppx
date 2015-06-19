@@ -1,7 +1,7 @@
 class CompanyDataTemplateCreateView extends InstituteDataTemplateCreateView {
 
 	_class = 'company';
-	_elementType = 'Company';
+	_elementType = 'Entreprise';
 
 	display : function () {
 		return <div>Create Company</div>;

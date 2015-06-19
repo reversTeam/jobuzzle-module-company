@@ -1,7 +1,7 @@
 class CompanyDataTemplateDeleteView extends InstituteDataTemplateDeleteView {
 
 	_class = 'company';
-	_elementType = 'Company';
+	_elementType = 'Entreprise';
 
 	display : function () {
 		return <div>Delete Company</div>;

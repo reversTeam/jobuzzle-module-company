@@ -1,7 +1,7 @@
 class CompanyDataDeleteTemplate extends InstituteDataDeleteTemplate {
 
 	_viewClassName = 'CompanyDataTemplateDeleteView';
-	_type = 'Company';
+	_type = 'Entreprise';
 	_route = 'company';
 
 }

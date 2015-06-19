@@ -1,10 +1,6 @@
 class CompanyDataTemplateSearchView extends InstituteDataTemplateSearchView {
 
 	_class = 'company';
-	_elementType = 'Company';
-
-	display : function () {
-		return <div>Search Company</div>;
-	}
+	_elementType = 'Entreprise';
 
 }
