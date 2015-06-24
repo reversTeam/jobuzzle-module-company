@@ -11,23 +11,6 @@ class CompanyDataTemplateTimelineView extends InstituteDataTemplateTimelineView 
 		});
 	}
 
-	render : function () {
-		var entity = this.state.entity;
-		var picture = 'https://s3.amazonaws.com/roomreveal_v2/gfx/company_placeholder.png';
-
-		if (entity.getLogo() != 'undefined')
-			picture = entity.getLogo();
-		var style = { backgroundImage : "url('"+ picture +"')" };
-
-		return (
-			<div className="institute-display-timeline" style={style} data-url={this.getUrl()} onClick={this.link}>
-				<div className="institute-bottom-info">
-					{entity.getName()}
-				</div>
-			</div>
-		);
-	}
-
 }
 
 #export CompanyDataTemplateTimelineView;
