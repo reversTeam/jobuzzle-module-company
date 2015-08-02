@@ -1,5 +1,6 @@
 class CompanyDataMainController extends InstituteDataMainController {
 
 	_serviceName = 'company_data_main_service';
-
+	_entityType = 'Entreprise';
+	_url = 'company';
 }

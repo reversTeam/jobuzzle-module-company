@@ -7,7 +7,7 @@ class CompanyDataTemplateTimelineView extends InstituteDataTemplateTimelineView 
 		var entity = this.state.entity;
 
 		return router.build('/company/view',{
-			company_url : 'toto'//entity.getUrl()
+			company_url : entity.getUrl()
 		});
 	}
 
