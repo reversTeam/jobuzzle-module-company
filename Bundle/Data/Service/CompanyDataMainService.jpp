@@ -1,6 +1,11 @@
 class CompanyDataMainService extends InstituteDataMainService {
 
 	_type = 'company';
+	_entityType = 'Entreprise';
 	_title = 'Companies';
+
+	getTitleParamsView : function (entity) {
+		return _super(entity);
+	}
 
 }

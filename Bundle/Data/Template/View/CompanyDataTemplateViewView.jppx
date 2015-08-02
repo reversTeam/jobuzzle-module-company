@@ -4,7 +4,12 @@ class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
 	_elementType = 'Entreprise';
 
 	display : function () {
-		return <div>View Company</div>;
+		var company = this.state.entity;
+
+		if (company) {
+			return <div>View Company : {company.getName()}</div>;
+		} else
+			return <div>View Company</div>;
 	}
 
 }
