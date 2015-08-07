@@ -1,5 +1,3 @@
-#import (Config.path +'/Modules/Institute/Bundle/Data/Entity/InstituteDataMainEntity') = InstituteDataMainEntity;
-
 class CompanyDataMainEntity extends InstituteDataMainEntity {
 
 	_type = 'Entreprise';
@@ -22,5 +20,3 @@ class CompanyDataMainEntity extends InstituteDataMainEntity {
 	}
 
 }
-
-#export CompanyDataMainEntity;
