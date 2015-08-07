@@ -1,5 +1,3 @@
-#import (Config.path +'/Modules/Institute/Bundle/Data/Template/InstituteDataTimelineTemplate') = InstituteDataTimelineTemplate;
-
 class CompanyDataTimelineTemplate extends InstituteDataTimelineTemplate {
 
 	_viewClassName = 'CompanyDataTemplateTimelineView';
@@ -11,5 +9,3 @@ class CompanyDataTimelineTemplate extends InstituteDataTimelineTemplate {
 	}
 
 }
-
-#export CompanyDataTimelineTemplate;
