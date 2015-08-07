@@ -1,5 +1,3 @@
-#import (Config.path +'/Modules/Institute/Bundle/Template/View/InstituteDataTemplateTimelineView') = InstituteDataTemplateTimelineView;
-
 class CompanyDataTemplateTimelineView extends InstituteDataTemplateTimelineView {
 
 	getUrl : function () {
@@ -12,5 +10,3 @@ class CompanyDataTemplateTimelineView extends InstituteDataTemplateTimelineView 
 	}
 
 }
-
-#export CompanyDataTemplateTimelineView;
