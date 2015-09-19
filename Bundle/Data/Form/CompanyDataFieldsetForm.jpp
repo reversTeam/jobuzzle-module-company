@@ -1,0 +1,39 @@
+/**************************************************************
+*     ####         #                               #          * Jobuzzle - Copyright All rights reserved
+*     ####         #                               #          *
+*       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
+*       ## #     # #     # #     #      #       #  # #     #  *
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-19 11:48:50
+*       ## #     # #     # #     #    #       #    # #     #  *
+*       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
+*  ####### #     # #     # #     #  #       #      # #        *
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:45:49
+**************************************************************/
+
+class CompanyDataFieldsetForm extends InstituteDataFieldsetForm {
+
+	public _formName = 'Comapny';
+	public _createFormName = 'company_data_create_form';
+	public _searchFormName = 'company_data_search_form';
+	public _editFormName = 'company_data_edit_form';
+
+	public _siretDisplay = undefined;
+
+	public getElementsDisplay : function () {
+		var elementsDisplay = _super();
+
+		elementsDisplay['siret'] = this.getSiretDisplay();
+
+		return elementsDisplay;
+	}
+
+	public getSiretDisplay : function () {
+		if (!this['_siretDisplay']) {
+			this['_siretDisplay'] = {};
+			this['_siretDisplay']['type'] = 'Text';
+			this['_siretDisplay']['label'] = 'Siret number';
+		}
+		return this['_siretDisplay'];
+	}
+
+}

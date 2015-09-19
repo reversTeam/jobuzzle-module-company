@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:07
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:53:04
 **************************************************************/
 
 class CompanyDataMainService extends InstituteDataMainService {
@@ -15,6 +15,7 @@ class CompanyDataMainService extends InstituteDataMainService {
 	_type = 'company';
 	_entityType = 'Entreprise';
 	_title = 'Companies';
+	_fieldsetName = 'company_data_fieldset_form';
 
 	getTitleParamsView : function (entity) {
 		return _super(entity);
