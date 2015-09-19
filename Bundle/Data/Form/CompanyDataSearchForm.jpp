@@ -3,16 +3,16 @@
 *     ####         #                               #          *
 *       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
 *       ## #     # #     # #     #      #       #  # #     #  *
-*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-08-08 11:12:48
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-19 11:49:25
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:57:58
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:56:56
 **************************************************************/
 
-class CompanyDataTemplateUpdateView extends InstituteDataTemplateUpdateView {
+class CompanyDataSearchForm extends InstituteDataSearchForm {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _title = 'Search company';
+	public _url = '/company';
 
 }

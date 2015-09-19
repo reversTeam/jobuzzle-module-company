@@ -3,16 +3,17 @@
 *     ####         #                               #          *
 *       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
 *       ## #     # #     # #     #      #       #  # #     #  *
-*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-08-08 11:12:48
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-19 11:49:13
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:57:58
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:55:48
 **************************************************************/
 
-class CompanyDataTemplateUpdateView extends InstituteDataTemplateUpdateView {
+class CompanyDataEditForm extends InstituteDataEditForm {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _title = 'Edit company';
+	public _url = '/company/view/update';
+	public _paramNameRoute = 'company_url';
 
 }

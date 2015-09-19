@@ -3,16 +3,16 @@
 *     ####         #                               #          *
 *       ##  #####  ######  #     # ####### ####### #  #####   * @Author: revers
 *       ## #     # #     # #     #      #       #  # #     #  *
-*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-08-08 11:12:48
+*       ## #     # #     # #     #     #       #   # #     #  * @Date:   2015-09-19 11:49:02
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:57:58
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:17:45
 **************************************************************/
 
-class CompanyDataTemplateUpdateView extends InstituteDataTemplateUpdateView {
+class CompanyDataCreateForm extends InstituteDataCreateForm {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _title = 'Create company';
+	public _url = '/company/create';
 
 }
