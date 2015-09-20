@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:56:56
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 12:11:36
 **************************************************************/
 
 class CompanyDataSearchForm extends InstituteDataSearchForm {
 
-	public _title = 'Search company';
+	public _title = 'form.title.company.search';
 	public _url = '/company';
 
 }
