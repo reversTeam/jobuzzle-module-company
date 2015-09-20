@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:45:49
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 11:50:43
 **************************************************************/
 
 class CompanyDataFieldsetForm extends InstituteDataFieldsetForm {
@@ -31,7 +31,7 @@ class CompanyDataFieldsetForm extends InstituteDataFieldsetForm {
 		if (!this['_siretDisplay']) {
 			this['_siretDisplay'] = {};
 			this['_siretDisplay']['type'] = 'Text';
-			this['_siretDisplay']['label'] = 'Siret number';
+			this['_siretDisplay']['label'] = 'form.input.company.siret_number';
 		}
 		return this['_siretDisplay'];
 	}

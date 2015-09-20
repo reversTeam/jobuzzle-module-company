@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:55:48
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 12:11:40
 **************************************************************/
 
 class CompanyDataEditForm extends InstituteDataEditForm {
 
-	public _title = 'Edit company';
+	public _title = 'form.title.company.edit';
 	public _url = '/company/view/update';
 	public _paramNameRoute = 'company_url';
 

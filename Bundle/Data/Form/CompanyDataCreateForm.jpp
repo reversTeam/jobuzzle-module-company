@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:17:45
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 12:11:44
 **************************************************************/
 
 class CompanyDataCreateForm extends InstituteDataCreateForm {
 
-	public _title = 'Create company';
+	public _title = 'form.title.company.create';
 	public _url = '/company/create';
 
 }
