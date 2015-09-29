@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 11:50:43
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-29 10:35:42
 **************************************************************/
 
 class CompanyDataFieldsetForm extends InstituteDataFieldsetForm {
 
-	public _formName = 'Comapny';
+	public _formName = 'Company';
 	public _createFormName = 'company_data_create_form';
 	public _searchFormName = 'company_data_search_form';
 	public _editFormName = 'company_data_edit_form';

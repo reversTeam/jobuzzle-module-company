@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 12:57:58
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:47:54
 **************************************************************/
 
 class CompanyDataTemplateUpdateView extends InstituteDataTemplateUpdateView {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _class = 'company';
+	public _elementType = 'Entreprise';
 
 }

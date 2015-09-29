@@ -7,17 +7,17 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:07
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:47:49
 **************************************************************/
 
 class CompanyDataTemplateTimelineView extends InstituteDataTemplateTimelineView {
 
 	getUrl : function () {
 		var router = serviceLocator.get('Router');
-		var entity = this.state.entity;
+		var entity = this.state['entity'];
 
 		return router.build('/company/view',{
-			company_url : entity.getUrl()
+			'company_url' : entity.getUrl()
 		});
 	}
 

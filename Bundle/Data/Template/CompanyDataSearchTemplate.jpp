@@ -7,14 +7,14 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-19 11:58:14
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:48:21
 **************************************************************/
 
 class CompanyDataSearchTemplate extends InstituteDataSearchTemplate {
 
-	_viewClassName = 'CompanyDataTemplateSearchView';
-	_serviceName = 'company_data_main_service';
-	_type = 'Entreprise';
-	_route = 'company';
+	public _viewClassName = 'CompanyDataTemplateSearchView';
+	public _serviceName = 'company_data_main_service';
+	public _type = 'Entreprise';
+	public _route = 'company';
 
 }
