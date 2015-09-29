@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:07
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:47:06
 **************************************************************/
 
 class CompanyDataTemplateSearchView extends InstituteDataTemplateSearchView {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _class = 'company';
+	public _elementType = 'Entreprise';
 
 }

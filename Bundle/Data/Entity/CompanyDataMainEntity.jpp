@@ -7,26 +7,34 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-08-08 14:30:07
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:56:47
 **************************************************************/
 
 class CompanyDataMainEntity extends InstituteDataMainEntity {
 
-	_type = 'Entreprise';
-	_templateTimeline = 'company_data_timeline_template';
-
-	#default get, set for _siret;
+	public _type = 'Entreprise';
+	public _templateTimeline = 'company_data_timeline_template';
 
 	intitialize : function () {
 		_super();
-		this._siret = undefined;
+		this['_siret'] = undefined;
 	}
 
 	hydrate : function (datas) {
 		_super(datas);
 
-		if (datas.siret)
-			this.setSiret(datas.siret);
+		if (datas['siret'])
+			this.setSiret(datas['siret']);
+
+		return this;
+	}
+
+	public getSiret : function () {
+		return this['_siret'];
+	}
+
+	public setSiret : function (siret) {
+		this['_siret'] = siret;
 
 		return this;
 	}

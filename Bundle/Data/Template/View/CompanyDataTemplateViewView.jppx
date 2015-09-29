@@ -7,16 +7,16 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:26:03
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:48:05
 **************************************************************/
 
 class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _class = 'company';
+	public _elementType = 'Entreprise';
 
 	public display : function () {
-		var company = this.state.entity;
+		var company = this.state['entity'];
 
 		if (company) {
 			return <div>View Company : {company.getName()}</div>;

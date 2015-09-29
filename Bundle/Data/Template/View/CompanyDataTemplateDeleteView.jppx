@@ -7,13 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-11 21:25:56
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:47:03
 **************************************************************/
 
 class CompanyDataTemplateDeleteView extends InstituteDataTemplateDeleteView {
 
-	_class = 'company';
-	_elementType = 'Entreprise';
+	public _class = 'company';
+	public _elementType = 'Entreprise';
 
 	public display : function () {
 		return <div>Delete Company</div>;
