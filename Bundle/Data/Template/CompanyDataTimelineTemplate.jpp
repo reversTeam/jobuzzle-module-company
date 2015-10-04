@@ -7,12 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:48:24
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-04 01:04:23
 **************************************************************/
 
 class CompanyDataTimelineTemplate extends InstituteDataTimelineTemplate {
 
 	public _viewClassName = 'CompanyDataTemplateTimelineView';
+	public _type = 'Company';
 
 	public onListen : function () {
 		var dispatcher = _super();
