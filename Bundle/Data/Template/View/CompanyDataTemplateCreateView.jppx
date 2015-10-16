@@ -7,12 +7,12 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:46:59
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-16 11:11:10
 **************************************************************/
 
 class CompanyDataTemplateCreateView extends InstituteDataTemplateCreateView {
 
 	public _class = 'company';
-	public _elementType = 'Entreprise';
+	public _elementType = 'Company';
 
 }
