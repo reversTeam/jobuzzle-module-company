@@ -7,13 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:48:15
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-16 11:11:42
 **************************************************************/
 
 class CompanyDataDeleteTemplate extends InstituteDataDeleteTemplate {
 
 	public _viewClassName = 'CompanyDataTemplateDeleteView';
-	public _type = 'Entreprise';
+	public _type = 'Company';
 	public _route = 'company';
 
 }

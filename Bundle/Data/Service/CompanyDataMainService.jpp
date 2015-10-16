@@ -7,13 +7,13 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-09-20 18:49:19
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-16 11:11:01
 **************************************************************/
 
 class CompanyDataMainService extends InstituteDataMainService {
 
 	public _type = 'company';
-	public _entityType = 'Entreprise';
+	public _entityType = 'Company';
 	public _title = 'Companies';
 	public _fieldsetName = 'company_data_fieldset_form';
 
