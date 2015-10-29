@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-16 11:11:29
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-29 11:43:44
 **************************************************************/
 
 class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
@@ -16,12 +16,28 @@ class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
 	public _elementType = 'Company';
 
 	public display : function () {
-		var company = this.state['entity'];
+		var entity = this.state['entity'];
+		var picture = '';
+		var style = {};
 
-		if (company) {
-			return <div>View Company : {company.getName()}</div>;
-		} else
-			return <div>View Company</div>;
+		if (entity.getLogo() != undefined)
+			picture = this.getUrlAsset(entity.getLogo());
+		style['backgroundImage'] = 'url("'+ picture +'")'; 
+		return <div className="view company">
+			<div className="container">
+				<div className="actions">
+					<i className="fa fa-pencil" data-url={this.getUrlEdit()} onClick={this.link}></i>
+				</div>
+				<div className="picture" style={style}></div>
+				<div className="explain">
+					<div className="name">
+						{entity.getName()}
+					</div>
+					<p className="description">{entity.getDescription()}</p>
+				</div>
+			</div>
+		</div>;
+
 	}
 
 }
