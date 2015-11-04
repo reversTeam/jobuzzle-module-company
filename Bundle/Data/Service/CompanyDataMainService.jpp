@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-10-16 11:11:01
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-03 12:47:46
 **************************************************************/
 
 class CompanyDataMainService extends InstituteDataMainService {
@@ -19,6 +19,13 @@ class CompanyDataMainService extends InstituteDataMainService {
 
 	getTitleParamsView : function (entity) {
 		return _super(entity);
+	}
+
+	public getElementEntity : function (id) {
+		var router = serviceLocator.get('Router');
+		var store = serviceLocator.get('ServiceManager').get('store_manager_main_service');
+
+		store.request(router.build('/company/view', { 'company_url' : id }));
 	}
 
 }
