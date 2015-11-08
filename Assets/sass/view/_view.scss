@@ -7,35 +7,23 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-06 08:55:05
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:22:55
 **************************************************************/
 
 div.company.view {
-	div.picture {
-		display: inline-block;
-		width: 160px;
-		height: 190px;
-		background-size : 100% 100%;
-		background-repeat: no-repeat;
-		background-color : rgba($primary_color, 0.8);
-	}
 
 	div.explain {
-		display: inline-block;
-		vertical-align: top;
-		margin-left : 20px;
-		width: calc(100% - 210px);
+		border-bottom: 1px solid darken($white_color, 5);
+	}
 
-		div.name {
-			display: block;
-			vertical-align: top;
-			color: $primary_color;
-			font-size: 26px;
-			font-weight: bold;
-		}
+	div.employee {
+		margin-top : 20px;
 
-		p.description {
-			text-align: justify;
+		h2.title {
+			text-align: center;
+			font-size: 42px;
+			font-weight: 200;
+			margin: 0px;
 		}
 	}
 }
