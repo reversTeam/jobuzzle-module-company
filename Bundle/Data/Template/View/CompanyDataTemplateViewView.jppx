@@ -7,7 +7,7 @@
 *       ## #     # #     # #     #    #       #    # #     #  *
 *       ## #     # #     # #     #   #       #     # ######   * @Last Modified by:   revers
 *  ####### #     # #     # #     #  #       #      # #        *
-*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-05 23:19:33
+*  ######   #####   ######  #####  ####### ####### # #######  * @Last Modified time: 2015-11-08 01:11:42
 **************************************************************/
 
 class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
@@ -15,32 +15,16 @@ class CompanyDataTemplateViewView extends InstituteDataTemplateViewView {
 	public _class = 'company';
 	public _elementType = 'Company';
 
-	public display : function () {
-		var entity = this.state['entity'];
-		var picture = '';
-		var style = {};
 
-		if (entity.getLogo() != undefined)
-			picture = this.getUrlAsset(entity.getLogo());
-		style['backgroundImage'] = 'url("'+ picture +'")'; 
-		return <div className="view company">
-			<div className="container">
-				<div className="actions">
-					<i className="fa fa-pencil" data-url={this.getUrlEdit()} onClick={this.link}></i>
-				</div>
-				<div className="picture" style={style}></div>
-				<div className="explain">
-					<div className="name">
-						{entity.getName()}
-					</div>
-					<p className="description">{entity.getDescription()}</p>
-				</div>
-			</div>
-			<div className="agent">
-				{ this.getHelper('DisplayBaseUserCompany', { entity : entity }) }
-			</div>
+	public displayContent : function (entity) {
+		var t = serviceLocator.get('Translator');
+
+		return <div className="employee">
+			<h2 className="title">{t.translate('company.view.team')}</h2>
+			{ this.getHelper('DisplayBaseUserCompany', { entity : entity }) }
 		</div>;
-
 	}
+
+
 
 }
