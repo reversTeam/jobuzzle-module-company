@@ -7,14 +7,20 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-08 01:53:49
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-09 14:11:49
 ###############################################################
 
-Companies: Entreprises
-view: '{{url}}'
+page:
+	title:
+		Companies: Entreprises
+		view: '{{url}}'
 
 view: 
 	team : Équipe
 
 timeline:
 	company : Entreprise
+
+view:
+	actions:
+		edit: Editer l'entreprise
