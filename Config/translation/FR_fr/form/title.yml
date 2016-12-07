@@ -7,10 +7,11 @@
 #       ## #     # #     # #     #    #       #    # #     #  #
 #       ## #     # #     # #     #   #       #     # ######   # @Last Modified by:   revers
 #  ####### #     # #     # #     #  #       #      # #        #
-#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-09-20 12:12:33
+#  ######   #####   ######  #####  ####### ####### # #######  # @Last Modified time: 2015-11-21 15:10:39
 ###############################################################
 
 company:
 	create: 'Créer une entreprise'
 	edit : 'Editer une entreprise'
 	search: 'Rechercher des entreprises'
+	delete: Supprimer l'entreprise
